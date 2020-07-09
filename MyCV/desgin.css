@@ -1,0 +1,29 @@
+ body {
+ background-color: lightblue;
+}
+ #name{
+    color: rgb(69, 69, 192);
+    padding-left: 2cm; 
+    
+}
+#myPicture{
+    width: 300px;
+    height: 250px;
+    padding-left: 2cm;
+}
+#summary{
+    display: inline-block;
+    position: absolute;
+}
+.contact{
+    padding-left: 2cm;
+}
+.skills{
+    padding-left: 2cm;
+}
+.language{
+    padding-left: 2cm;
+}
+.reference{
+    padding-left: 2cm;
+}
