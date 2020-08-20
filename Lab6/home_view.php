@@ -1,3 +1,12 @@
+<?php
+session_start();
+$id=$_SESSION['id'];
+if(is_null($id)){
+	 header('location:login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +20,7 @@
 			 <a href="home_view.php?tab=ep">Edit Profile</a> <br> <br> 
 			<a href="home_view.php?tab=cpp">Change Profile Picture</a> <br> <br> 
 			<a href="home_view.php?tab=cp">Change Password</a><br> <br> 
-			 <a href="login.php">Log Out</a> <br> <br>
+			 <a href="logout.php">Log Out</a> <br> <br>
 		   </td>
 			<td>
 	 <?php

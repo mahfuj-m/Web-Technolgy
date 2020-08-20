@@ -1,8 +1,11 @@
 <?php
 require_once('Database.php');
 $db=new Model;
-session_start();
+//session_start();
 $id=$_SESSION['id'];
+if(is_null($id)){
+	 header('location:login.php');
+}
 
 $sql="SELECT * FROM `student_info` WHERE student_id='$id'";
 $profile=$db->executeQuery($sql);
@@ -16,7 +19,7 @@ $profile=$db->executeQuery($sql);
 <body>
 	<table>
 		<tr>
-			<td> 	Your ID <?php echo $profile[0]['student_id']; ?>" <br>
+			<td> 	Your ID <?php echo $profile[0]['student_id']; ?><br>
 	Your Name <?php echo $profile[0]['name']; ?> <br>
 	Your Department Name <?php echo $profile[0]['dept']; ?> <br>
 	Your CGPA <?php echo $profile[0]['cgpa']; ?> <br>

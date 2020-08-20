@@ -1,8 +1,12 @@
 <?php
-session_start();
+//session_start();
 require_once('Database.php');
 $db=new Model;
 $id=$_SESSION['id'];
+if(is_null($id)){
+	 header('location:login.php');
+}
+
 $sql="SELECT `image` FROM `student_info` WHERE student_id='$id'";
 $profile=$db->executeQuery($sql);
 $img="";
