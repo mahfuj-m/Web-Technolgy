@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donor</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="form_design.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h5> <span style="color: red;">*</span> - Denotes Required Information</h5>
+        <h4>>1 Donation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>2 Confirmation  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >3 Thank You</h4>
+        <div>
+        
+            <form action="">
+                <div>
+                    <h3 style="color: #b30000;">Donor Information</h3>
+                    <table id="info1" >
+                        <tr>
+                            <th class="t">
+                                <label for="fname">First Name <span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="fname" name="fname" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="lname">Last Name <span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="lname" name="lname" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="company">Company</label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="company" name="company" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="add1">Address 1 <span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="add1" name="add1" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="add2">First Name </label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="add2" name="add2" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="city">City <span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="city" name="city" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="state">State <span style="color: red;">*</span></label>
+                            </th>
+                            <th class="b">
+                                <select name="state" id="state">
+                                    <option selected disabled hidden>Select a State</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Arizoana">Arizoana</option>
+                                </select>
+    
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="zip">Zip Code<span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="zip" name="zip" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="country">Country<span style="color: red;">*</span></label>
+                            </th>
+                            <th class="b">
+                                <select name="country" id="country">
+                                    <option selected disabled hidden>Select a Country</option>
+                                    <option value="America">America</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                </select>
+    
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="phone">Phone</label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="phone" name="phone" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="fax">Fax</label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="fax" name="fax" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="email">Email <span style="color: red;">*</span></label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="email" name="email" class="box">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="donation">Donation Amount<span style="color: red;">*</span><br>
+                                <span style="font-weight: 100">(Check a button or type in your <br>amount)</span>&nbsp;&nbsp;&nbsp;
+                                </label>
+                            </th>
+                            <th class="b">
+                            <input type="radio" id="none" name="amou" value=0>
+                            <label for="none">None</label>
+                            <input type="radio" id="fifty" name="amou" value=50>
+                            <label for="fifty">$50</label>
+                            <input type="radio" id="seventyfive" name="amou" value=75>
+                            <label for="seventyfive">$75</label>
+                            <input type="radio" id="hundred" name="amou" value=100>
+                            <label for="hundred">$100</label>
+                            <input type="radio" id="twofifty" name="amou" value=250>
+                            <label for="twofifty">$250</label>
+                            <input type="radio" id="other" name="amou" value=0>
+                            <label for="other">Other</label> <br>
+                            <label style="line-height: 0.7;" for="oamount">Others Amount $</label>
+                            <input style="line-height: 0.7;" type="text" id="oamount" name="oamount">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="rd">Recurring Donation <br> <span style="font-weight: 100;">(Check if yes)</span></label>
+                            </th>
+                            <th class="b">
+                                <input type="checkbox" id="yes" name="yes" value="yes">
+                                <label for="yes"><span style="font-weight: 100;">I am interested in giving on a regualr basis.<br>
+                                Monthly Credit Card $ </span></label>
+                                <input type="text" id="am" name="am">
+                                <label for="for" style="font-weight: 100;">For</label>
+                                <input type="text" id="am" name="am">
+                                <label for="Mon" style="font-weight: 100;"> Months.</label>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 style="color: #b30000;">Honorarium and Memorial Donation Information</h3>
+                    <table id="info2">
+                        <tr>
+                            <th class="t">
+                                I would like to make this <br> donation
+                            </th>
+                            <td class="b">
+                                <input type="radio" id="th" name="hd" value="to honor">
+                                <label for="th">To Honor</label><br>
+                                <input type="radio" name="hd" id="im" value="In Memory of">
+                                <label for="im">In Memory of</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                Name
+                            </th>
+                            <td class="b">
+                                <input type="text" name="name" id="name" class="box">
+                            </td>
+                        </tr>                        <tr>
+                            <th class="t">
+                                Ackowledge Donation to
+                            </th>
+                            <td class="b">
+                                <input type="text" name="ak" id="ak" class="box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                Address
+                            </th>
+                            <td class="b">
+                                <input type="text" name="add" id="add" class="box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                City
+                            </th>
+                            <td class="b">
+                                <input type="text" name="dcity" id="dcity" class="box">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="dstate">State <span style="color: red;">*</span></label>
+                            </th>
+                            <th class="b">
+                                <select name="dstate" id="sdtate">
+                                    <option selected disabled hidden>Select a State</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="Arizoana">Arizoana</option>
+                                </select>
+    
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="t">
+                                <label for="dzip">Zip</label>                          
+                            </th>
+                            <th class="b">
+                                <input type="text" id="dzip" name="dzip" class="box">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 ><span style="color: #b30000;line-height: 0.7;">Additional Information</span><br>
+                    <span style="font-weight: 100;font-size: small;line-height: 0.7;">Please enter your name ,company or organization as you would like it to appear in our publications:</span></h3>
+                    <table id="aname">
+                        <tr>
+                            <th class="t">
+                                <label for="an">Name</label></th>
+                            <th class="b">
+                                <input type="text" name="an" id="an" class="box">
+                            </th>
+                        </tr>
+                    </table>
+                    <input type="checkbox" name="anon" id="anon" value="yes">
+                    <label for="anon">I would like my gift to remain anonymous</label><br>
+                    <input type="checkbox" name="mg" id="mg" value="yes">
+                    <label for="mg">My employer offers a matching gift program.I will maik the matching gift form.</label><br>
+                    <input type="checkbox" name="ca" id="ca" value="yes">
+                    <label for="ca">Please save the cost of acknowledgeing this gift by not mailing a thank you latter.</label>
+                    <table id="comments">
+                        <tr>
+                            <td class="t">
+                                <b>Comments</b><br>(please type any questions or feedback <br>here )
+                            </td>
+                            <td class="b">
+                                <textarea name="comments" id="comments" cols="35" rows="4"></textarea>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="t" style="vertical-align: top;">
+                               How may we contact you?
+                            </th>
+                            <td class="b">
+                                <input type="checkbox" name="cemail" id="cemail">
+                                <label for="cemail">E-mail</label><br>
+                                <input type="checkbox" name="cpost" id="cpost">
+                                <label for="cpost">Postal Mail</label><br>
+                                <input type="checkbox" name="ctel" id="ctel">
+                                <label for="ctel">Telephone</label><br>
+                                <input type="checkbox" name="cfax" id="cfax">
+                                <label for="cfax">Fax</label>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="color: lightgray;">I would like to recieve newsletters and information about special events by:</p>
+                    <table id="last">
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="cemail" id="cemail">
+                                <label for="cemail">E-mail</label><br>
+                                <input type="checkbox" name="cpost" id="cpost">
+                                <label for="cpost">Postal Mail</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="checkbox" name="vol" id="vol" value="yes">
+                    <label for="vol">I would like information about volunteering with the</label>
+                    <input type="text" name="vname" id="vname">
+                    <hr color="gray" style="height: 10px;width: 70%;text-align: left;margin-left: 0;">
+                    <table id="final">
+                        <tr>
+                            <td class="t">
+                                <button type="reset" value="reset">Reset</button>
+
+                            </td>
+                            <td class="b">
+                                <button type="button" value="continue">Continue</button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </form>
+            <p><span><i class="fa fa-lock" style="color: #A0910C;"></i></span> Donate online with confidence. You are on a secure server.</p>
+            <p>If you any have anuy problems or questions, please contact <span style="color: lightgray;">support.</span> </p>
+
+        </div>
+
+        
+    </body>
+</html>

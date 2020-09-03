@@ -1,0 +1,39 @@
+.box{
+    width: 300px;
+}
+.t{
+    text-align: right;
+}
+.b{
+    text-align: left;
+}
+#info1{
+    padding-left: 140px;
+}
+#state{
+    width: 150px;
+}
+#country{
+    width: 370px;
+}
+#oamount{
+    width: 240px;
+}
+#am{
+    width: 55px;
+}
+#info2{
+    padding-left: 165px;
+}
+#aname{
+    padding-left: 290px;
+}
+#comments{
+    padding-left: 75px;
+}
+#last{
+    padding-left: 325px;
+}
+#final{
+    padding-left: 270px;
+}
