@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="design.css">
+</head>
+<body>
+	<h3 id='tag' class="mid">Select the Character Named : </h3>
+	<h1 id="char_name" class="mid"></h1>
+	<p id="def"></p>
+	<div id="image_con">
+		
+		
+	</div>
+	<button id="btn" onclick="change()">Next</button>
+	<button id="btn-1" onClick="window.location.reload();" >Reload</button>
+
+	<script>
+		var char_count=1,result=0;
+	    var arr=['Iron Man','Captain America','Black Widow','Black Panther',
+	    			'Thanos','Hulk','Antman','Spiderman','Thor'];
+	    var def=['ironman','captain','black_widow','black_panther',
+	    			'thanos','hulk','antman','spiderman','thor'];
+	    var image=['antman.png','spiderman.jpg','thanos.png','ironman.jpg','hulk.jpg','thor.jpg'
+	    			,'black_widow.png','black_panther.jpg','captain.jpg'];
+	    var a=Math.floor(Math.random() * arr.length);
+		document.getElementById('char_name').innerHTML=arr[a];
+		document.getElementById('def').innerHTML=def[a];
+
+		arr.splice(a,1);
+		def.splice(a,1);
+		render_image();
+		function render_image(){
+				var container = document.getElementById('image_con');
+				while (image.length!=0) {
+					var a=Math.floor(Math.random() * image.length);
+					//console.log(image.length);
+					var img = document.createElement('img');
+				    img.src = "../photo/"+image[a];
+				    img.width="200";
+				    img.height="200";
+				    img.setAttribute("onClick", "image_info(this)");
+				    img.setAttribute("id",image[a]);
+				    container.appendChild(img);
+				    image.splice(a,1);
+				}
+
+		}
+		function change(){
+				var a=Math.floor(Math.random() * arr.length);
+				document.getElementById('char_name').innerHTML=arr[a];
+				document.getElementById('def').innerHTML=def[a];
+				arr.splice(a,1);
+				def.splice(a,1);
+				char_count++;
+				if(char_count>9){
+					 document.getElementById("btn").style.visibility = "hidden";
+					 document.getElementById('char_name').innerHTML="Reload This Page";
+					 document.getElementById("btn-1").style.visibility = "visible";
+					 alert("Your Score : "+result);
+				}
+				
+			}
+		function image_info(i){
+
+			//Rest of the code write here.
+
+			var val=i.src.split("/");
+			var selected_char=val[val.length-1];
+			document.getElementById(selected_char).src='../photo/marvel.png';
+			var n=selected_char.split(".");			
+			var mainchar=document.getElementById("def").innerHTML;
+			if(mainchar==n[0]){
+				result+=10;
+			}
+			else{
+				result-=10;
+			}
+			//console.log(result);
+		}
+
+
+	</script>
+
+</body>
+</html>

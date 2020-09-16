@@ -1,7 +1,11 @@
 <html>
 <body>
 <?php
+<<<<<<< HEAD
+    $nameerr=$passerr=$npass="";
+=======
     $nameerr=$passerr=$npass=$showp="";
+>>>>>>> a0d9ece33a77b1d2e50cf9c07eb9fea1a5b96824
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         if(empty($_POST['username']) || (!preg_match("/[\w_\.-]{2,}/" , $_POST["username"]))){
             if(empty($_POST['username'])){
@@ -20,6 +24,11 @@
                         $passerr="Lenght not less than 8 characters";
                     }
                 }
+<<<<<<< HEAD
+                if($_POST["userpass"]!=$_POST["conpass"]){
+                    $npass="New password and Re type password must be same";
+                }
+=======
           if($_POST["userpass"]!=$_POST["conpass"]){
                         $npass="New password and Re type password must be same";
                     }
@@ -27,6 +36,7 @@
            
           }
                  
+>>>>>>> a0d9ece33a77b1d2e50cf9c07eb9fea1a5b96824
     }  
 
     ?>
@@ -37,9 +47,12 @@
     <input type="text" name="username"><?php echo $nameerr; ?> <br>
     <label for="userpass">Password   :</label>
     <input type="password" name="userpass" id="userpass"><?php echo $passerr; ?>
+<<<<<<< HEAD
+=======
     <br>
     <input type="checkbox" name="showpass" value="showpass">
     <label for="showpass">Show Password</label>
+>>>>>>> a0d9ece33a77b1d2e50cf9c07eb9fea1a5b96824
     <hr>
     <input type="checkbox"  name="rm" value="remember">
     <label for="rm"> Remember Me</label><br>
@@ -63,9 +76,13 @@
     
     
     </form>
+<<<<<<< HEAD
+
+=======
     <?php
     echo $showp;
     ?>
+>>>>>>> a0d9ece33a77b1d2e50cf9c07eb9fea1a5b96824
 
 
 </body>

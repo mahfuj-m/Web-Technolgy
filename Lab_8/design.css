@@ -1,0 +1,35 @@
+body{
+	background-color:#FAF0E6;
+}
+.mid{
+	text-align: center;
+	color:#483D8B;
+}
+#char_name{
+	color: #32CD32;
+}
+#btn{
+		border: none; 
+		 color: white; 
+		 padding: 14px 28px;
+		  cursor: pointer; 
+		 background-color: #4CAF50;
+		
+		 float: right;
+    }
+    #btn-1{
+    			border: none; 
+		 color: white; 
+		 padding: 14px 28px;
+		  cursor: pointer; 
+		 background-color: #4CAF50;
+		
+		 float: right;
+		 visibility: hidden;
+
+    	
+    }
+    #def{
+    	visibility: hidden;
+
+    }
